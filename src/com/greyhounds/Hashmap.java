@@ -19,7 +19,11 @@ public class Hashmap {
         }
         
         public Object get(Object key) { 
-        
+		    public int hashedKey;
+			//get the integer for the index you want to find
+			hashedKey = hashKey(key);
+			//find the index
+			return hashmapArray.get(hashedKey);
         }
         
         private int getIndexFor(ArrayList<KeyValuePair> bucket, Object key) {
