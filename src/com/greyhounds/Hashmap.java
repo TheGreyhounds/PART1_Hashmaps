@@ -22,6 +22,7 @@ public class Hashmap {
         }
         
         public void set(Object key, Object value) {
+			
         
         }
         
@@ -38,6 +39,8 @@ public class Hashmap {
         }
         
         private int hashKey(Object key) {
-        
+			
+        return key.hashCode()% num_buckets;
+		
         }
 }
