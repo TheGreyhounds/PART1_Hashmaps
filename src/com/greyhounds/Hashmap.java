@@ -11,7 +11,14 @@ public class Hashmap {
         }
         
         public ArrayList<ArrayList<KeyValuePair>> getHashmap() {
-        
+			ArrayList<ArrayList<KeyValuePair>> hashmap = new ArrayList<ArrayList<KeyValuePair>>();
+			
+			for (int buckets = 0; buckets < num_buckets; buckets++){
+				ArrayList<KeyValuePair> bucket = new ArrayList<KeyValuePair>();
+				hashmapArray.add(bucket);
+			}
+			
+			return hashmap;
         }
         
         public void set(Object key, Object value) {
