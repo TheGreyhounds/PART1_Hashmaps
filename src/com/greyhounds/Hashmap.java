@@ -25,7 +25,7 @@ public class Hashmap {
         
         }
         
-        public Object get(Object key) { 
+        public Object getBucket(Object key) { 
 		    public int hashedKey;
 			//get the integer for the index you want to find
 			hashedKey = hashKey(key);
