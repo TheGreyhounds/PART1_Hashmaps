@@ -16,9 +16,4 @@ public class KeyValuePair {
         public Object getValue() {
                 return value;
         }
-        
-        @Override
-        public String toString() {
-                return "key: \"" + key.toString() + "\" value: \"" + value.toString() + "\"";
-        }
 }
